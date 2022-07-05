@@ -1,0 +1,89 @@
+.presentation
+    background-color: $background
+    padding: 96px 0
+    position: relative
+    &__content
+        position: relative
+        z-index: 4
+    &__title
+        font-family: 'RubikBold'
+        font-weight: 700
+        font-size: 144px
+        line-height: 106%
+        color: $colormain
+        margin-bottom: 24px
+    &__text
+        font-size: 24px
+        line-height: 28px
+        color: #000
+        margin-bottom: 120px
+        max-width: 672px
+        &-continuation
+            font-size: 18px
+            line-height: 21px
+            max-width: 416px
+            color: #000
+    &__img
+        position: absolute
+        &.lemon
+            z-index: 3
+            right: 15.76%
+            bottom: -103px
+        &.nootris
+            bottom: 13%
+            right: 10.14%
+            z-index: 2
+        &.ginger
+            right: 280px
+            bottom: 120px
+            z-index: 0
+@media (max-width: 1350px)
+    .presentation
+        &__title
+            font-size: 114px
+        &__text
+            font-size: 22px
+            &-continuation
+                font-size: 16px
+        &__img
+            &.ginger
+                right: 50px
+            &.nootris
+                bottom: 6%
+                right: 8.14%
+@media (max-width: 1040px)
+    .presentation
+        padding-top: 187.47px
+        &__title
+            font-size: 80px
+        &__text
+            max-width: 50%
+            font-size: 18px
+            &-continuation
+                font-size: 14px
+                max-width: 30%
+@media (max-width: 760px)
+    .presentation
+        padding-top: 115.47px
+        padding-bottom: 50px
+        &__title
+            font-size: 50px
+            margin-bottom: 10px
+        &__text
+            max-width: 100%
+            font-size: 16px
+            margin-bottom: 25px
+            &-continuation
+                font-size: 14px
+                max-width: 50%
+                margin-bottom: 90px
+        &__img
+            height: 65%
+            &.ginger
+                bottom: -50px
+                height: 35%
+            &.lemon
+                height: 40%
+                bottom: -153px
+            &.nootris
+                bottom: -20%

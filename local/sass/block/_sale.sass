@@ -1,0 +1,116 @@
+.sale
+    background-color: $backgroundmain
+    padding: 110px 0 112px
+    position: relative
+    &__title
+        font-family: 'RubikBold'
+        font-weight: 700
+        font-size: 48px
+        line-height: 57px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        color: $colormain
+        margin-bottom: 85px
+        & span
+            color: $special
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 59px
+    &__price
+        &:first-of-type
+            margin-right: 32px
+        &.before
+            font-size: 36px
+            line-height: 119.44%
+            color: #ADADAD
+            position: relative
+            &::before
+                position: absolute
+                left: -14%
+                bottom: 50%
+                content: " "
+                border-radius: 0.5px
+                border-bottom: 1px solid #ADADAD
+                height: 2px
+                width: 112px
+        &.after
+            font-size: 48px
+            line-height: 121.28%
+            color: #fff
+    &__benefit
+        display: flex
+        justify-content: space-between
+        max-width: 1088px
+        margin: 0 auto 64px
+    &__button
+        display: flex
+        justify-content: center
+        & button
+            width: 256px
+            height: 56px
+            background: $special
+            border-radius: 7px
+            border: none
+            outline: inherit
+            cursor: pointer
+            font-weight: 400
+            font-size: 18px
+            line-height: 21px
+.benefit
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+    &__img
+        margin-bottom: 45px
+    &__text
+        font-size: 18px
+        line-height: 21px
+        color: $colormain
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        &.main
+            font-size: 36px
+            line-height: 43px
+        & span
+            color: $special
+@media (max-width: 1040px)
+    .sale
+        padding: 85px 0 85px
+        &__title
+            font-size: 40px
+            margin-bottom: 55px
+        &__wrapper
+            margin-bottom: 30px
+        &__price
+            &:first-of-type
+                margin-right: 28px
+            &.before
+                font-size: 28px
+                color: #ADADAD
+                position: relative
+                &::before
+                    width: 88px
+            &.after
+                font-size: 40px
+@media (max-width:760px)
+    .sale
+        &__title
+            font-size: 38px
+        &__benefit
+            flex-direction: column
+    .benefit
+        &__block
+            margin-bottom: 5px
+        &__img
+            margin-bottom: 5px
+        &__text
+            &.main
+                font-size: 28px

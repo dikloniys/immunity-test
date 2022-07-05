@@ -1,0 +1,60 @@
+@import 'helpers/_variables' 
+@import 'helpers/_fonts' 
+*
+    margin: 0 
+    padding: 0 
+    box-sizing: border-box
+h1,h2,h3,h4,h5,h6
+    margin: 0
+ul,li
+    list-style: none
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+    color: $colormain
+p
+    margin: 0
+img
+    width: 100%
+    height: 100%
+body
+    font-family: 'Rubik'
+    font-weight: 400
+.container
+    margin: 0 auto
+    max-width: 1400px
+    width: 100%
+.title__main
+    color: #000
+    font-family: 'RubikBold'
+    font-weight: 700
+    font-size: 36px
+    line-height: 43px
+    margin-bottom: 16px
+.desktop
+    display: block
+.mobile
+    display: none
+@media (max-width: 1040px)
+    .desktop
+        display: none 
+    .mobile
+        display: block
+@media (max-width: 1440px)
+    .container
+        max-width: 1288px
+        width: 100%
+@media (max-width: 1350px)
+    .container
+        max-width: 1000px
+@media (max-width: 1040px)
+    .container
+        max-width: 700px
+@media (max-width: 760px)
+    .container
+        max-width: 345px
+        position: relative
+    .title__main
+        font-size: 34px
+        margin-bottom: 5px
